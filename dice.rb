@@ -25,14 +25,14 @@ get("/dice/2/6") do
   outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 	
   erb(:two_six)
-  
+
 end
 
 get("/dice/2/10") do
   first = rand(1..10)
   second = rand(1..10)
   sum = first + second
-  ountcome = "You rolled a #{first} and a #{second} for a total of #{sum}."
+  outcome = "You rolled a #{first} and a #{second} for a total of #{sum}."
 
   "<h1>2d10</h1>
   <p>#{outcome}</p>"
@@ -40,7 +40,7 @@ end
 
 get("/dice/1/20") do
   first = rand(1..20)
-  ountcome = "You rolled a #{first}."
+  outcome = "You rolled a #{first}."
 
   "<h1>1d20</h1>
   <p>#{outcome}</p>"
@@ -53,7 +53,7 @@ get("/dice/5/4") do
   fourth = rand(1..4)
   fifth = rand(1..4)
   sum = first + second + third + fourth + fifth
-  ountcome = "You rolled a #{first}, #{second}, #{third}, #{fourth}, and a #{fifth} for a total of #{sum}."
+  outcome = "You rolled a #{first}, #{second}, #{third}, #{fourth}, and a #{fifth} for a total of #{sum}."
 
   "<h1>5d4</h1>
   <p>#{outcome}</p>"
