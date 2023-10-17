@@ -24,8 +24,8 @@ get("/dice/2/6") do
 	
   outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 	
-  "<h1>2d6</h1>
-   <p>#{outcome}</p>"
+  erb(:two_six)
+  
 end
 
 get("/dice/2/10") do
